@@ -135,3 +135,11 @@
   .card {
     flex-basis: 100%;
   }
+
+  @for $i from 1 through 12 {
+    @include mq($break) {
+      .col-#{$i} {
+        flex-basis: ((100% / 12)* $i);
+      }
+    }
+  }

@@ -416,23 +416,23 @@ a {
 }
 
 .default:hover {
-  background-color: #b5f1fe;
+  background-color: #9cecfd;
 }
 
 .error:hover {
-  background-color: #f5cacc;
+  background-color: #f1b5b8;
 }
 
 .info:hover {
-  background-color: #cbc0e2;
+  background-color: #bdafd9;
 }
 
 .success:hover {
-  background-color: #b0e5c0;
+  background-color: #9ddfb0;
 }
 
 .warning:hover {
-  background-color: #fec9bb;
+  background-color: #feb4a2;
 }
 
 .form {

@@ -44,7 +44,7 @@
   
   @each $btn-name, $btn-color in $btn-colors{
     .#{$btn-name}:hover{
-      background-color: lighten($btn-color, 20%)
+      background-color: lighten($btn-color, 15%)
     }
   } 
 

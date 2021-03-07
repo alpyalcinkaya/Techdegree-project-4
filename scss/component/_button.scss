@@ -9,6 +9,7 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    transition: background-color 1s;
 
     @include mq($break){
       padding: 10px 30px;
@@ -19,23 +20,31 @@
  
     }
   }
-  
+
   .default {
-    background-color: #51ddfc;
+    background-color: map-get($btn-colors, "default");
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: map-get($btn-colors, "error");
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: map-get($btn-colors, "info");
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: map-get($btn-colors, "success");
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: map-get($btn-colors, "warning");
   }
+
+  
+  @each $btn-name, $btn-color in $btn-colors{
+    .#{$btn-name}:hover{
+      background-color: lighten($btn-color, 20%)
+    }
+  } 
+
